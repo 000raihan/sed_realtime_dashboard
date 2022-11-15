@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect, useRef } from "react";
+import BarChart from "./BarChart";
+
+// export const data = {
+//   labels: ["Case on Hold", "Submitted", "In Production", "Shipped"],
+//   datasets: [
+//     {
+//       label: "# of Votes",
+//       data: [12, 19, 3, 5],
+//       backgroundColor: ["#F2CC59", "#BA68C8", "#407BFF", "#E6E5E6"],
+//       borderColor: ["#F2CC59", "#BA68C8", "#407BFF", "#E6E5E6"],
+//       borderWidth: 1,
+//     },
+//   ],
+// };
+
+// const pieOptions = {
+//   plugins: {
+//     legend: {
+//       display: false,
+//       labels: {
+//         font: {
+//           size: 12,
+//         },
+//       },
+//     },
+//   },
+// };
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Bar Chart</h1>
+      <BarChart/>
     </div>
   );
 }
